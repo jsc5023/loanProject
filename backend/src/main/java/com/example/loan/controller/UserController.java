@@ -18,8 +18,7 @@ import java.time.format.DateTimeFormatter;
 public class UserController {
 
     @Autowired
-    static UserService userService;
-
+    private UserService userService;
     @GetMapping("/security/login")
     public String login() {
 
